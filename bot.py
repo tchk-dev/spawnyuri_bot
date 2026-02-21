@@ -3,7 +3,8 @@ import aiohttp
 import random
 import io
 
-TOKEN = "YOUR_BOT_TOKEN_HERE"
+import os
+TOKEN = os.environ.get("TOKEN")
 
 # Вставь сюда всю строку целиком из настроек gelbooru, например:
 # "&api_key=01738cb5...&user_id=1920749"
